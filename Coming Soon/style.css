@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #3ad0c5;
+}
+
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 25px;
+    color: #fff;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+
+.launch-timer{
+    display: flex;
+}
+
+.launch-timer div{
+    flex-basis:  100px;
+}
+
+.launch-timer div p{
+    font-size: 3.5em;
+    margin-bottom: -15px;
+}
+
+
+.rocket{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 200px;
+    animation: fly 4s ease-in infinite;
+
+}
+
+@keyframes fly{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+   100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
